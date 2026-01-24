@@ -95,7 +95,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // 애니메이션 대상 요소들
-document.querySelectorAll('.trust-item, .feature-item, .target-item, .gallery-item').forEach(el => {
+document.querySelectorAll('.trust-item, .feature-item, .target-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

@@ -287,38 +287,33 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: start;
+    align-items: center;
 }
 
 .features-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
 }
 
-.features-images {
+.features-image-wrapper {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
-.features-image {
+.features-main-image {
     width: 100%;
+    max-width: 600px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.features-image-led {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
     transition: transform 0.3s;
 }
 
-.features-image-led:hover {
-    transform: scale(1.02);
+.features-main-image:hover {
+    transform: scale(1.03);
 }
 
 .feature-item {
@@ -343,35 +338,6 @@ section {
 .feature-text p {
     color: var(--color-gray);
     line-height: 1.6;
-}
-
-/* 제품 갤러리 */
-.product-gallery {
-    background: var(--color-white);
-    padding: 80px 20px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.gallery-item {
-    background: var(--color-bg);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.gallery-item:hover {
-    transform: scale(1.05);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
 }
 
 /* 추천 대상 */
