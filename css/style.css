@@ -135,12 +135,55 @@ body {
 .hero-image {
     flex: 1;
     text-align: center;
+    position: relative;
 }
 
-.hero-image img {
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 100%;
+    max-height: 100%;
     height: auto;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    background: var(--color-primary);
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .scroll-indicator {
@@ -247,6 +290,18 @@ section {
     align-items: start;
 }
 
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.features-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .features-image {
     width: 100%;
     height: auto;
@@ -254,10 +309,16 @@ section {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
-.features-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.features-image-led {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.features-image-led:hover {
+    transform: scale(1.02);
 }
 
 .feature-item {
@@ -527,6 +588,10 @@ section {
         font-size: 2.5rem;
     }
 
+    .hero-slider {
+        height: 400px;
+    }
+
     .features-content {
         grid-template-columns: 1fr;
     }
@@ -576,6 +641,10 @@ section {
         font-size: 2rem;
     }
 
+    .hero-slider {
+        height: 350px;
+    }
+
     .trust-grid {
         grid-template-columns: 1fr;
     }
@@ -588,6 +657,10 @@ section {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 1.8rem;
+    }
+
+    .hero-slider {
+        height: 300px;
     }
 
     .section-title {
