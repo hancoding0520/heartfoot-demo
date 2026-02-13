@@ -1,0 +1,64 @@
+/* ==========================================
+   핵심 특징
+   ========================================== */
+
+.features {
+    background: var(--color-bg);
+}
+
+.features-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.features-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.features-main-image:hover {
+    transform: scale(1.03);
+}
+
+.feature-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.feature-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    min-width: 50px;
+}
+
+.feature-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+}
+
+.feature-text p {
+    color: var(--color-gray);
+    line-height: 1.6;
+}

@@ -1,0 +1,28 @@
+/* ==========================================
+   카탈로그 섹션 (추천대상/활용법/혈액순환)
+   ========================================== */
+
+.target-audience {
+    background: var(--color-bg);
+    padding: 80px 20px;
+}
+
+.usage {
+    background: var(--color-white);
+    padding: 80px 20px;
+}
+
+.circulation {
+    background: var(--color-bg);
+    padding: 80px 20px;
+}
+
+.catalog-image-full {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}

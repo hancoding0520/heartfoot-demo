@@ -1,0 +1,37 @@
+/* ==========================================
+   푸터
+   ========================================== */
+
+.footer {
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 60px 20px 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    height: 50px;
+    opacity: 0.8;
+}
+
+.footer-info {
+    text-align: right;
+}
+
+.footer-info p {
+    color: var(--color-light-gray);
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.85rem;
+}

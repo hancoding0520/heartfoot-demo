@@ -1,0 +1,197 @@
+/* ==========================================
+   반응형 스타일
+   ========================================== */
+
+/* 태블릿 */
+@media (max-width: 968px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-slider {
+        height: 400px;
+    }
+
+    .features-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    .video-section {
+        padding: 80px 0;
+    }
+    
+    .video-content {
+        gap: 40px;
+    }
+    
+    .video-text h2 {
+        font-size: 2rem;
+    }
+    
+    .video-text p {
+        font-size: 1.1rem;
+    }
+
+    .manual {
+        padding: 80px 0;
+    }
+    
+    .manual .section-title {
+        font-size: 2rem;
+    }
+    
+    .accordion {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .manual-content {
+        padding: 25px;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        background: var(--color-white);
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        transition: left 0.3s;
+        gap: 20px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-slider {
+        height: 350px;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .target-list {
+        grid-template-columns: 1fr;
+    }
+
+    .video-section {
+        padding: 60px 0;
+    }
+    
+    .video-content,
+    .video-content.video-reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .video-wrapper {
+        width: 100%;
+    }
+    
+    .video-text {
+        text-align: center;
+        padding: 0;
+    }
+    
+    .video-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .video-text p {
+        font-size: 1rem;
+    }
+
+    .manual {
+        padding: 60px 0;
+    }
+    
+    .manual .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .accordion-button {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    
+    .accordion-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 1.3rem;
+    }
+    
+    .manual-content {
+        padding: 20px;
+    }
+    
+    .manual-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .spec-item {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .spec-label {
+        min-width: auto;
+    }
+}
+
+/* 소형 모바일 */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-slider {
+        height: 300px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+    }
+}

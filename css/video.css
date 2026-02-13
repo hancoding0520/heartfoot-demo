@@ -1,0 +1,70 @@
+/* ==========================================
+   동영상 섹션
+   ========================================== */
+
+.video-section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.video-section.video-dark {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    color: #fff;
+}
+
+.video-section.video-light {
+    background: #f8f9fa;
+    color: #2c3e50;
+}
+
+.video-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.video-content.video-reverse {
+    flex-direction: row-reverse;
+}
+
+/* 동영상 래퍼 */
+.video-wrapper {
+    flex: 1;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 동영상 텍스트 */
+.video-text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.video-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.video-dark .video-text h2 {
+    color: #fff;
+}
+
+.video-light .video-text h2 {
+    color: #2c3e50;
+}
+
+.video-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}

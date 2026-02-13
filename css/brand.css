@@ -1,0 +1,56 @@
+/* ==========================================
+   브랜드 신뢰도
+   ========================================== */
+
+.brand-trust {
+    background: var(--color-white);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.trust-item {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--color-bg);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.trust-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.trust-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+}
+
+.trust-item p {
+    color: var(--color-gray);
+    font-size: 0.95rem;
+}
+
+.certifications {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.certifications img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
